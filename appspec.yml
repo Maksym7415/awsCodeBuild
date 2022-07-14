@@ -3,11 +3,11 @@ os: linux
 
 files:
   - source: /
-    destination: /var/www/popov-maksym.hopto.org
+    destination: /var/www/uikit.ddns.net
     file_exists_behavior: OVERWRITE
 
 permissions:
-  - object: /var/www/popov-maksym.hopto.org
+  - object: /var/www/uikit.ddns.net
     pattern: "**"
     owner: root
     group: root
