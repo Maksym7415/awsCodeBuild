@@ -15,10 +15,8 @@ function Registration() {
             data[item.name] = item.value
           }
         })
-        console.log(data);
         cognitoUserPool.signUp(data.email, data.password, [], null, (err, data) => {
           if(!err) {
-            console.log(data)
             navigate('../login');
           }
         })
