@@ -1,0 +1,13 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /var/www/popov-maksym.hopto.org
+    file_exists_behavior: OVERWRITE
+
+permissions:
+  - object: /var/www/popov-maksym.hopto.org
+    pattern: "**"
+    owner: ubuntu
+    group: root
