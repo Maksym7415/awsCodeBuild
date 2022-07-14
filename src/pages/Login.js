@@ -44,7 +44,7 @@ function Login() {
       <input type='password' placeholder="Password" name="password"/>
       <button type="submit">Login</button>
       </form>
-      <button style={{width: 300}} onClick={() => navigate('../registration')}>to registr</button>
+      <button style={{width: 300}} onClick={() => navigate('../registration')}>to register</button>
     </div>
   )
 }

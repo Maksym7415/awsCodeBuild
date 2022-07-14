@@ -19,7 +19,7 @@ function Home() {
       setFile(event.target.files[0])
     }}/>
     <button onClick={uploadFile}>
-      Upload file
+      Download file
     </button>
    </div>
   )
