@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 function Login() {
   const navigate = useNavigate()
   return (
-    <div>
+    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh', flexDirection: 'column', rowGap: 15}}>
       <form onSubmit={(event) => {
         event.preventDefault();
         const data = {}
@@ -25,6 +25,7 @@ function Login() {
 
         user.authenticateUser(authDetails, {
           onSuccess: (data) => {
+            localStorage.setItem('@awsToken', data.accessToken.jwtToken)
             navigate('../')
           },
           onFailure: (err) => {
@@ -43,6 +44,7 @@ function Login() {
       <input type='password' placeholder="Password" name="password"/>
       <button type="submit">Login</button>
       </form>
+      <button style={{width: 300}} onClick={() => navigate('../registration')}>to registr</button>
     </div>
   )
 }
