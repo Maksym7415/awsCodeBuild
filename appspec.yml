@@ -9,5 +9,5 @@ files:
 permissions:
   - object: /var/www/popov-maksym.hopto.org
     pattern: "**"
-    owner: ubuntu
+    owner: root
     group: root
